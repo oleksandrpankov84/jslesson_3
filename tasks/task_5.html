@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №5</title>
+</head>
+<body>
+	<header>
+		<h1>Задача №5</h1>
+	</header>
+	<main>
+		<p>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.</p>
+		<br>
+		<h2>Результат:</h2>
+		<script>
+			//введення даних
+			const userDrivigCategoty=prompt('Введить категорію водійського посвідчення','abc')
+					drivingMoto='a'
+					drivingCar='b'
+					drivingTruck='c'
+			//розвʼязок
+			if (userDrivigCategoty.toLowerCase()===drivingMoto){
+				document.write('Ви можете керувати мотоциклом.')
+			}
+			else if (userDrivigCategoty.toLowerCase()===drivingCar){
+				document.write('Ви можете керувати легковим автомобілем.')
+			}
+			else if(userDrivigCategoty.toLowerCase()===drivingTruck){
+				document.write('Ви можете керувати вантажним автомобілем.')
+			}
+			else {
+				document.write('Ви ввели не корректні дані.')
+			}
+		</script>
+	</main>
+</body>
+</html>

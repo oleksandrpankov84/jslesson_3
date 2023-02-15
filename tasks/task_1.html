@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №1</title>
+</head>
+<body>
+	<header>
+		<h1>Задача №1</h1>
+	</header>
+	<main>
+		<p>З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова.</p>
+		<br>
+		<h2>Результат:</h2>
+		<script>
+			// Введення даних
+			const firstChaildName=prompt('Введить ім`я першої дитини',''),
+					firstChaildSweets=parseInt(prompt('Введить кількість цукерок першої дитини','')),
+					secondChaildName=prompt('Введить ім`я другої дитини',''),
+					secondChaildSweets=parseInt(prompt('Введить кількість цукерок другої дитини',''))
+			// порівняння даних та рішення
+			if (firstChaildSweets>secondChaildSweets){
+				document.write(`<p>У ${firstChaildName} цукерок більше</p>`)
+			}
+			else if (firstChaildSweets<secondChaildSweets){
+				document.write(`<p>У ${secondChaildName} цукерок більше</p>`)
+			}
+			else {
+				document.write('<p>У обох дітей кількість цукерок однаова.</p>')
+			}
+		</script>
+	</main>
+</body>
+</html>
